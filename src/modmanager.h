@@ -1,6 +1,8 @@
 #ifndef __MODMANAGER_H__
 #define __MODMANAGER_H__
 
+namespace swing_arrow {
+
 class ModManager {
 public:
     static ModManager &get();
@@ -31,5 +33,7 @@ protected:
 
     inline static ModManager *s_instance = nullptr;
 };
+
+}
 
 #endif /* __MODMANAGER_H__ */

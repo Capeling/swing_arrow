@@ -1,5 +1,9 @@
 #include "modmanager.h"
 
+#include <Geode/Geode.hpp>
+
+namespace swing_arrow {
+
 #define LISTENFORSETTING(type, setter, settingName) \
     geode::listenForSettingChanges(settingName, [](type val) { \
         ModManager::get().setter(val); \
@@ -35,4 +39,6 @@ $on_mod(Loaded) {
     LISTENFORSETTING(double, setOffsetY, "offsetY");
     LISTENFORSETTING(double, setScale, "scale");
     LISTENFORSETTING(double, setOpacity, "opacity");
+}
+
 }
