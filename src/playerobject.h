@@ -1,6 +1,9 @@
 #ifndef __PLAYEROBJECT_H__
 #define __PLAYEROBJECT_H__
 
+#include <Geode/Geode.hpp>
+#include <Geode/modify/PlayerObject.hpp>
+
 namespace swing_arrow {
 
 struct ArrowPlayerObject : geode::Modify<ArrowPlayerObject, PlayerObject> {
